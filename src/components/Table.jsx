@@ -20,7 +20,7 @@ const Table = ({ rows, setRows }) => {
           </tr>
         </thead>
         <tbody>
-            {console.log(rows)}
+            {/* {console.log(rows)} */}
           {rows.map((row) => (
             <TableRow key={row.id} row={row} rows={rows} setRows={setRows} />
           ))}

@@ -62,7 +62,7 @@ const TableRow = ({ row, rows, setRows, parent = null, level = 0 }) => {
   return (
     <>
       <tr>
-        <td style={{ paddingLeft: `${level * 20}px` }}>{row.label}</td>
+        <td style={{ paddingLeft: `${level * 20}px` }}>{!row.children ? "--": ""}{row.label}</td>
         <td>{row.value}</td>
         <td>
           <input
